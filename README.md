@@ -15,10 +15,25 @@ git init
 ```
 git pull https://github.com/rahulraina711/Dockerizing_nodejs_webApp.git
 ```
-4. Create a file named .env in the myapp folder and open it <br>```touch .env && nano .env```</br>
-5. Add the following in the .env file
+4. Create a file named .env in the myapp folder and open it
+```
+touch .env && nano .env
+```
+5. Add the following in the .env file and save it
+```
+MDB_CONNECT_STRING= "your mongoDB connect link"
+JWT_KEY=kjandcoiadakocna738732r8u9hr34r98rhr78g4r028rfhbf72f239hf29f
+PORT = 3100
+```
 6. Create a file named .dockerignore in the myapp folder and open it
+```
+touch .dockerignore && nano .dockerignore
+```
 7. Add the following in the file
+```
+node_modules
+npm-debug.log
+```
 8. Open Dockerfile and in front of EXPOSE write the port number your express-app listens to, in my case its 3100
 9. Enter the following command in terminal 
 ```
@@ -29,3 +44,6 @@ docker build -t node-web-app .
 docker run -p 49160:3100 -d node-web-app
 ```
 ### Now if you go in your browser and type http://localhost:49160 you should se your apps home page.
+### To use reverse prozy check out [this link][1] (skip the PM2 part).
+
+[1][https://github.com/rahulraina711/Nginx-express.git]
