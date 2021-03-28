@@ -15,7 +15,7 @@ git init
 ```
 git pull https://github.com/rahulraina711/Dockerizing_nodejs_webApp.git
 ```
-4. Create a file named .env in the myapp folder and open it ```touch .env && nano .env```
+4. Create a file named .env in the myapp folder and open it <br>```touch .env && nano .env```</br>
 5. Add the following in the .env file
 6. Create a file named .dockerignore in the myapp folder and open it
 7. Add the following in the file
