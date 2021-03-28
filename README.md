@@ -44,6 +44,4 @@ docker build -t node-web-app .
 docker run -p 49160:3100 -d node-web-app
 ```
 ### Now if you go in your browser and type http://localhost:49160 you should se your apps home page.
-### To use reverse prozy check out [this link][1] (skip the PM2 part).
-
-[1][https://github.com/rahulraina711/Nginx-express.git]
+### To use reverse prozy check out <a href="https://github.com/rahulraina711/Nginx-express.git" >this link</a> (skip the PM2 part).
