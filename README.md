@@ -35,6 +35,9 @@ node_modules
 npm-debug.log
 ```
 8. Open Dockerfile and in front of EXPOSE write the port number your express-app listens to, in my case its 3100
+```
+EXPOSE 3100
+```
 9. Enter the following command in terminal 
 ```
 docker build -t node-web-app .
